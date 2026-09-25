@@ -27,7 +27,14 @@ void insertion(){
     //2-> v.at()
     cout<<"**********************************"<<endl;
     vector<char> val;
+    //check if out vector or not
+    if(val.empty()){
+        cout<<"vector is empty\n";
+    }
     val={'a','e','i','o','u'};
+    if(!val.empty()){
+        cout<<"now not empty\n";
+    }
     cout<<"accessing index no 2 using [] ->"<<val[2]<<endl;
     cout<<"accessing index no 2 using at() ->"<<val.at(2)<<endl;
     val[2]='f'; //update a value in index 2.
